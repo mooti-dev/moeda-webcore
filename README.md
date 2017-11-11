@@ -7,7 +7,9 @@ Each client will obtain the server's public key by calling the endpoint
 this endpoint will simply return the base64 encoded public key for the server.  This public key will be used
 when sending messages over the websocket connnection.
 
-## Message sent from client to server
+
+# Websocket messages
+## Messages sent from client to server
 	
 	{
                 "messageType: "clientToServer",
@@ -24,7 +26,7 @@ when sending messages over the websocket connnection.
 *may contain any additional fields*
 
 
-## Message sent from server to client
+## Messages sent from server to client
 	{
 		"message": "<base64 encoded encrypted return from webservice call>",
 		"nonce": "<base64 encoded nonce used for encryption>",
