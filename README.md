@@ -1,7 +1,7 @@
 # MOEDA-webcore-2
 
 Each client will obtain the server's public key by calling the endpoint
-** /pubkey **
+**/pubkey**
 
 this endpoint will simply return the base64 encoded public key for the server.  This public key will be used
 when sendinng messages over the websocket connnection.
