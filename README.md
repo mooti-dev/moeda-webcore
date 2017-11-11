@@ -16,7 +16,7 @@
 *may contain any additional fields*
 
 
-##Message sent from server to client
+## Message sent from server to client
 	{
 		"message": "<base64 encoded encrypted return from webservice call>",
 		"nonce": "<base64 encoded nonce used for encryption>",
