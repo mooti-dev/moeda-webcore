@@ -1,10 +1,17 @@
 # MOEDA-webcore-2
+
+Each client will obtain the server's public key by calling the endpoint
+** /pubkey **
+
+this endpoint will simply return the base64 encoded public key for the server.  This public key will be used
+when sendinng messages over the websocket connnection.
+
 ## Message sent from client to server
 	
 	{
                 "messageType: "clientToServer",
-                "nonce" : "<base64 encoded nonce>",
-                "sendPubkey": "<base64 encoed pubkey>",
+                "nonce" : "<base64 encoded nonce used to encrypt the message>",
+                "sender": "<base64 encoded client's  pubkey>",
                 "message" : "<base64 encoded message to send to server>"
        }
 
