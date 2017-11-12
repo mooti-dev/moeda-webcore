@@ -38,7 +38,7 @@ var dbhost ="mootidev.c5yxa5wex9tp.us-west-1.rds.amazonaws.com";
 var MONGODBHOST = "54.67.113.149";
 
 
-var moedservices = "http://somewhere/";
+var moedservices = "http://moeda-dev.us-east-1.elasticbeanstalk.com/";
 
 // configure app to use bodyParser(); this will let us get the data from a POST
 app.use(bodyParser.json({limit: '50mb'}));
