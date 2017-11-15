@@ -2,7 +2,7 @@
 
 ## Location
 webservices: http://13.56.157.171:8383
-websocket: ws://13.56.157.171:8000
+websocket: ws://13.56.157.171:8080
 
 Each client will obtain the server's public key by calling the endpoint
 
