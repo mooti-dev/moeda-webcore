@@ -48,7 +48,7 @@ app.use(function (req, res, next) {
     res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
     res.header('Expires', '-1');
     res.header('Pragma', 'no-cache');
-    res.header('Content-type', 'application/json');
+    res.header('Content-Type', 'application/json');
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header('charset', 'utf-8');
@@ -256,6 +256,7 @@ router.get('/', function (req, res) {
 //create post method for route '/pubkey'
 router.route('/pubkey').post(function (req, res) {
 
+    res.header("Content-Type", "text/plain");
     res.send(keys.publicKey);
 
 });
