@@ -256,7 +256,7 @@ router.get('/', function (req, res) {
 //create post method for route '/pubkey'
 router.route('/pubkey').post(function (req, res) {
 
-    res.header("Content-Type", "text/plain");
+    res.header('Content-Type', 'text/plain');
     res.send(keys.publicKey);
 
 });
