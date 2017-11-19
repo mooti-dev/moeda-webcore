@@ -142,6 +142,8 @@ wss.on('connection', function connection(ws, req) {
 
             var plainMessage = sodium.crypto_box_open(Buffer.concat([Buffer.alloc(16), message], 16+message.length),nonce,senderPubkey, new Buffer(keys.secretkey, 'base64'));
 
+            console.log('Decrypted message == ' + plainMessage);
+
             var response = JSON.parse(plainMessage);
 
 
